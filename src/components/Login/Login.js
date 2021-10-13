@@ -96,7 +96,7 @@ setCheck(checked)
 						{...register('email',{ required: true })}
 						type='email'
 					/>
-				{errors.email && <span className='text-red-600'>Please Enter Email Address</span>}
+				{errors.email && <span className='text-red-600'>Please Enter Email Address</span>}   
 
 					<input
 						className="p-3 bg-gray-200 w-80 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
