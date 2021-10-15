@@ -22,7 +22,7 @@
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	width: 5%;
+	width: 50px;
 	background: rgb(0, 0, 0);
 }
 .overlay {
@@ -42,4 +42,18 @@
 	color: aliceblue;
 	font-size: 1rem;
 	background-color: rgba(0, 0, 0, 0.205);
+}
+/* review */
+.review-bg {
+	background-image: url('./img/reviewBg.jpg');
+	height: 540px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.review-img {
+	margin-top: 8px;
+	width: 80px !important;
+	height: 80px;
+	border-radius: 50%;
 }
