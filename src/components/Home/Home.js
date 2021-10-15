@@ -1,4 +1,7 @@
 import React from 'react';
+import BestRooms from '../BestRooms/BestRooms';
+import HomeAbout from '../HomeAbout/HomeAbout';
+import Reviews from '../Reviews/Reviews';
 import Rooms from '../Rooms/Rooms';
 const Home = () => {
 	return (
@@ -14,6 +17,12 @@ const Home = () => {
 					</p>
 				</div>
 			</div>
+			{/* Home About */}
+			<HomeAbout />
+			{/* our best rooms */}
+			<BestRooms />
+			{/* Reviews */}
+			<Reviews />
 			{/* Rooms */}
 			<div className="container mx-auto mt-12">
 				<h1 className="text-5xl mb-3">Hotel Rooms</h1>

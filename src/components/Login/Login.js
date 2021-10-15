@@ -7,7 +7,7 @@ import useAuth from '../../hooks/useAuth';
 
 const Login = () => {
 
-	const { signinUsingGoogle, signUpWithEmailAndPassword ,loginWithEmailAndPassword,setUSerName,setUser} = useAuth();
+	const {setIsLoading, signinUsingGoogle, signUpWithEmailAndPassword ,loginWithEmailAndPassword,setUSerName,setUser} = useAuth();
 	const location = useLocation();
 	const history = useHistory();
 	const redirect_uri = location.state?.from || '/';
@@ -22,7 +22,8 @@ const[check, setCheck]= useState(null)
 			.catch((error) => {
 				const errorMessage = error.message;
 				console.log(errorMessage);
-			});
+			})
+			.finally(()=> setIsLoading(false))
 	};
 	// form hook
 	const { register, handleSubmit, formState: { errors } } = useForm();
@@ -40,15 +41,17 @@ const[check, setCheck]= useState(null)
 			.catch((error) => {
 				// An error occurred
 				// ...
-			});
+			}).finally(()=> setIsLoading(false))
 
 			})
 			.catch((error) => {
 				const errorMessage = error.message;
 				console.log(errorMessage);
-			});
+			}).finally(()=> setIsLoading(false))
 
 	};
+
+
 	// Login with password
 const handleLogin=(data)=>{
 loginWithEmailAndPassword(data.email,data.password)
@@ -61,7 +64,7 @@ loginWithEmailAndPassword(data.email,data.password)
 			.catch((error) => {
 				const errorMessage = error.message;
 				console.log(errorMessage);
-			});
+			}).finally(()=> setIsLoading(false))
 }
 	
 	const handleToggle=(e)=>{
