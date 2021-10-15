@@ -6,6 +6,7 @@ import Login from './components/Login/Login';
 import Header from './components/Header/Header';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+import Footer from './components/Footer/Footer';
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 						<Login />
 					</Route>
 				</Switch>
+				<Footer />
 			</Router>
 		</AuthProvider>
 	);

@@ -3,7 +3,7 @@ import BestRooms from '../BestRooms/BestRooms';
 import FoodReception from '../FoodReception/FoodReception';
 import HomeAbout from '../HomeAbout/HomeAbout';
 import Reviews from '../Reviews/Reviews';
-import Rooms from '../Rooms/Rooms';
+
 const Home = () => {
 	return (
 		<div>
@@ -26,11 +26,6 @@ const Home = () => {
 			<Reviews />
 			{/* fOOD & RECEPTION */}
 			<FoodReception />
-			{/* Rooms */}
-			<div className="container mx-auto mt-12">
-				<h1 className="text-5xl mb-3">Hotel Rooms</h1>
-				<Rooms />
-			</div>
 		</div>
 	);
 };
