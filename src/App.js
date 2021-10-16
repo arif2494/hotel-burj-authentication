@@ -7,12 +7,12 @@ import Header from './components/Header/Header';
 import AuthProvider from './context/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Footer from './components/Footer/Footer';
-import Gallery from './components/Gallery/Gallery';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/ContactUs';
 import DataProvider from './context/DataProvider';
 import RoomDetails from './components/RoomDetails/RoomDetails';
+import MasonaryGallery from './components/MasonaryGallery/MasonaryGallery';
 
 function App() {
 	return (
@@ -36,7 +36,7 @@ function App() {
 							<ContactUs />
 						</Route>
 						<Route exact path="/gallery">
-							<Gallery />
+							<MasonaryGallery />
 						</Route>
 						<Route path="/rooms/:roomId">
 							<RoomDetails />

@@ -1,5 +1,4 @@
 import React from 'react';
-import RoomHeading from '../RoomHeading/RoomHeading';
 import notFound from '../../img/pageNotFOund.jpg';
 const PageNotFound = () => {
 	return (
