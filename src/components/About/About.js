@@ -36,17 +36,14 @@ const About = () => {
 						<img src={bed} alt="!" className="w-20" />
 						<p className="text-2xl font-thin mt-2">50 Rooms</p>
 					</div>
-
 					<div className="border-2 border-gray-400 p-4 flex  flex-col items-center">
 						<img src={chef} alt="!" className="w-20" />
 						<p className="text-2xl font-thin mt-2">35 Staff</p>
 					</div>
-
 					<div className="border-2 border-gray-400 p-4 flex  flex-col items-center">
 						<img src={resturant} alt="!" className="w-20" />
 						<p className="text-2xl font-thin mt-2">2 Restaurent</p>
 					</div>
-
 					<div className="border-2 border-gray-400 p-4 flex  flex-col items-center">
 						<img src={pool} alt="!" className="w-20" />
 						<p className="text-2xl font-thin mt-2">3 Swimming Pool</p>

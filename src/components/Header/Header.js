@@ -17,10 +17,13 @@ const Header = () => {
 							Rooms
 						</NavLink>
 						<NavLink to="/about" className="mr-5 hover:text-gray-900 text-3xl text-white">
-							About Us
+							About
 						</NavLink>
-						<NavLink to="/login" className="mr-5 hover:text-gray-900 text-3xl text-white">
-							Login
+						<NavLink to="/contact" className="mr-5 hover:text-gray-900 text-3xl text-white">
+						Contact
+						</NavLink>
+						<NavLink to="/gallery" className="mr-5 hover:text-gray-900 text-3xl text-white">
+						Gallery
 						</NavLink>
 					</nav>
 					<NavLink
@@ -54,6 +57,9 @@ const Header = () => {
 								Sign In
 							</NavLink>
 						)}
+						<NavLink to="/login" className="ml-5 hover:text-gray-900 text-3xl text-white">
+							Login
+						</NavLink>
 					</div>
 				</div>
 			</header>
