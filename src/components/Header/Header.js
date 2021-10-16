@@ -1,19 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import hotelIcon from '../../img/hotel-icon.png';
+import hotelIcon from '../../img/hotelIcon.svg';
 
 const Header = () => {
 	const { user, logOut } = useAuth();
 	return (
-		<div>
-			<header className="text-gray-600 body-font bg-purple-500">
+	
+			<header className="text-gray-600 body-font bg-transparent header-position w-full">
 				<div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 					<nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
 						<NavLink to="/" className="mr-5 hover:text-gray-900 text-3xl text-white">
 							Home
 						</NavLink>
-						<NavLink to="/room" className="mr-5 hover:text-gray-900 text-3xl text-white">
+						<NavLink to="/rooms" className="mr-5 hover:text-gray-900 text-3xl text-white">
 							Rooms
 						</NavLink>
 						<NavLink to="/login" className="mr-5 hover:text-gray-900 text-3xl text-white">
@@ -54,7 +54,7 @@ const Header = () => {
 					</div>
 				</div>
 			</header>
-		</div>
+		
 	);
 };
 

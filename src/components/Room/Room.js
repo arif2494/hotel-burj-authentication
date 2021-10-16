@@ -1,77 +1,28 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Room = () => {
+const Room = (props) => {
+	const { name, img, description, price, id } = props.room;
+	console.log(props);
+	const url = '';
 	return (
-		<div>
-			<h1 className="text-center text-5xl mt-6">All Rooms</h1>
-			<div className="container mx-auto">
-				<div className="grid grid-cols-3 gap-14 mt-12">
-					<div className=" border-2 border-solid rounded-xl shadow-2xl mb-2">
-						<img
-							className="w-full rounded-xl h-72 animate"
-							src="https://source.unsplash.com/kyt0PkBSCNQ/250x250"
-							alt=""
-						/>
-						<h3 className="text-2xl font-bold my-2 border-b-2 border-solid pb-2 pl-2 text-gray-700">
-							Single Room
-						</h3>
-						<p className="p-2 text-gray-600 font-medium">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam commodi a beatae
-							perferendis aliquam atque quia. Commodi quos eius repudiandae.
-						</p>
-						<div className="flex justify-evenly border-t-2 border-solid p-2 font-medium">
-							<p>
-								Price: <span className="font-bold"> $50</span>
-							</p>
-							<p>
-								Seat Available : <span className="font-bold">2</span>
-							</p>
-						</div>
+		<div className="border-2 border-gray-400 my-2  rounded-2xl p-4">
+			<div className="grid grid-cols-6 gap-4">
+				<div className=" col-span-2">
+					<img src={img} alt="" className="w-full rounded-2xl" />
+				</div>
+				<div className=" col-span-3 p-4 flex justify-center items-center flex-col">
+					<div>
+						<h1 className="font-medium text-3xl ">{name}</h1>
+						<p className="pt-4 text-lg font-thin">{description.substring(0, 300)}...</p>
 					</div>
-					<div className=" border-2 border-solid rounded-xl shadow-2xl mb-2">
-						<img
-							className="w-full rounded-xl h-72 animate"
-							src="https://source.unsplash.com/paydk0JcIOQ/250x250"
-							alt=""
-						/>
-						<h3 className="text-2xl font-bold my-2 border-b-2 border-solid pb-2 pl-2 text-gray-700">
-							Couple Room
-						</h3>
-						<p className="p-2 text-gray-600 font-medium">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam commodi a beatae
-							perferendis aliquam atque quia. Commodi quos eius repudiandae.
-						</p>
-						<div className="flex justify-evenly border-t-2 border-solid p-2 font-medium">
-							<p>
-								Price: <span className="font-bold"> $50</span>
-							</p>
-							<p>
-								Seat Available : <span className="font-bold">2</span>
-							</p>
-						</div>
-					</div>
-					<div className=" border-2 border-solid rounded-xl shadow-2xl mb-2">
-						<img
-							className="w-full rounded-xl h-72 animate"
-							src="https://source.unsplash.com/xP0gM0Dh-MY/250x250"
-							alt=""
-						/>
-						<h3 className="text-2xl font-bold my-2 border-b-2 border-solid pb-2 pl-2 text-gray-700">
-							Family Room
-						</h3>
-						<p className="p-2 text-gray-600 font-medium">
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam commodi a beatae
-							perferendis aliquam atque quia. Commodi quos eius repudiandae.
-						</p>
-						<div className="flex justify-evenly border-t-2 border-solid p-2 font-medium">
-							<p>
-								Price: <span className="font-bold"> $50</span>
-							</p>
-							<p>
-								Seat Available : <span className="font-bold">2</span>
-							</p>
-						</div>
-					</div>
+				</div>
+				<div className="flex flex-col justify-center items-center">
+					<h1 className="font-bold text-3xl"> $ {price}</h1>
+					<p className="text-lg my-4">Per Night</p>
+					<Link to="">
+						<button className="bg-black flex  text-white px-6 py-3 font-medium ">Show Details</button>
+					</Link>
 				</div>
 			</div>
 		</div>

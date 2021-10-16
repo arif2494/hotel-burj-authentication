@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/NTsRwXZ/cloud1.jpg",
+    "name": "Ensuite Room",
+    "capacity": 2,
+    "size": 15,
+    "price": 30,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 4.5
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/HgMTGT1/cloud2.jpg",
+    "name": "Standard Room",
+    "capacity": 3,
+    "size": 20,
+    "price": 45,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 4
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/GksBsbn/cloud3.jpg",
+    "name": "Comfort Room",
+    "capacity": 4,
+    "size": 25,
+    "price": 50,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 4.7
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/TYYm7h4/cloud4.jpg",
+    "name": "Deluxe Room",
+    "capacity": 5,
+    "size": 35,
+    "price": 65,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 3.7
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/5TrKVq1/cloud8.jpg",
+    "name": "Grand Deluxe Room",
+    "capacity": 6,
+    "size": 42,
+    "price": 75,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 4.7
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/3cd6pBh/cloud7.jpg",
+    "name": "Modern Room",
+    "capacity": 8,
+    "size": 47,
+    "price": 75,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 4.2
+  },
+  {
+    "id": 7,
+    "img": "https://i.ibb.co/KxMTxL5/cloud6.jpg",
+    "name": "Apparments Room",
+    "capacity": 10,
+    "size": 68,
+    "price": 110,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 3.1
+  },
+  {
+    "id": 8,
+    "img": "https://i.ibb.co/YNtzH0S/cloud5.jpg",
+    "name": "Small Room",
+    "capacity": 2,
+    "size": 15,
+    "price": 25,
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel molestie nisl. Duis ac mi leo. Mauris at convallis erat. Aliquam interdum semper luctus. Aenean ex tellus, gravida ut rutrum dignissim, malesuada vitae nulla. Sed viverra, nisl dapibus lobortis porttitor, risus risus dictum risus, sed rhoncus orci urna dignissim leo. Cras id nunc nulla. Aliquam a tortor fermentum, finibus elit ac, dictum purus. Nulla mollis ex interdum commodo luctus. In hac habitasse platea dictumst. Quisque vel rutrum ipsum. Praesent at imperdiet diam. Ut vel vulputate massa. Duis condimentum tincidunt tristique. Donec sollicitudin efficitur venenatis. Integer ex lectus, lobortis nec cursus ac, suscipit ut magna.",
+    "ratting": 2.1
+  }
+]

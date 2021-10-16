@@ -1,6 +1,10 @@
+.header-position {
+	position: absolute;
+}
 .hero-section {
-	background-image: url('https://source.unsplash.com/JTUmzXLoqHQ/1920x1080');
-	height: 65vh;
+	background-image: url('./img/home-bg.jpg');
+	height: 100vh;
+	width: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -56,4 +60,13 @@
 	width: 80px !important;
 	height: 80px;
 	border-radius: 50%;
+}
+
+/* room details */
+.room-details {
+	background-image: url('./img/roomDetails.jpg');
+	height: 405px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
 }
