@@ -12,7 +12,7 @@ import PageNotFound from './components/PageNotFound/PageNotFound';
 import About from './components/About/About';
 import ContactUs from './components/ContactUs/ContactUs';
 import DataProvider from './context/DataProvider';
-import RoomHeading from './components/RoomHeading/RoomHeading';
+import RoomDetails from './components/RoomDetails/RoomDetails';
 
 function App() {
 	return (
@@ -38,8 +38,8 @@ function App() {
 						<Route exact path="/gallery">
 							<Gallery />
 						</Route>
-						<Route path="/rooms/:roomdetails">
-							<RoomHeading />
+						<Route path="/rooms/:roomId">
+							<RoomDetails />
 						</Route>
 						<Route path="/login">
 							<Login />
