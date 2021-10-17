@@ -7,7 +7,7 @@ const Footer = () => {
 	return (
 		<footer className="bg-black text-white">
 			<div className="container mx-auto">
-				<div className="grid grid-cols-1 md:grid-cols-3 pt-12">
+				<div className="grid grid-cols-1 md:grid-cols-3 pt-12 w-9/12 mx-auto ">
 					<div>
 						<h4 className="font-thin text-2xl">Phone Support</h4>
 						<p className="tent-lg font-thin text-gray-400 pb-5">24 HOURS A DAY</p>

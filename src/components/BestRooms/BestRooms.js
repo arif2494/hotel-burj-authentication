@@ -9,7 +9,7 @@ import { Person, BoundingBoxCircles } from 'react-bootstrap-icons';
 const BestRooms = () => {
 	return (
 		<div className="bg-gray-100">
-			<div className="container mx-auto w-8/12">
+			<div className="container mx-auto p-2 w-full md:w-8/12">
 				<p className="font-thin  text-gray-500 text-center pt-8 bottom-line">LUXURY ROOMS</p>
 				<h2 className="text-5xl font-thin text-center py-5 mb-5">BEST ROOMS</h2>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 pb-12">
@@ -40,28 +40,28 @@ const BestRooms = () => {
 								<img src={bestRoom1} alt="" />
 								<p className="overlay-text ">
 									<span>FAMILY ROOM</span>
-									<span className="bg-yellow-500 p-1 rounded ml-3">FROM $25</span>
+									<span className="bg-yellow-500 hidden md:block p-1 rounded ml-3">FROM $25</span>
 								</p>
 							</div>
 							<div className="overlay">
 								<img src={bestRoom2} alt="" />
 								<p className="overlay-text ">
 									<span>LUXURY ROOM</span>
-									<span className="bg-yellow-500 p-1 rounded ml-3">FROM $25</span>
+									<span className="bg-yellow-500 hidden md:block p-1 rounded ml-3">FROM $25</span>
 								</p>
 							</div>
 							<div className="overlay">
 								<img src={bestRoom3} alt="" />
 								<p className="overlay-text ">
 									<span>DOUBLE ROOM</span>
-									<span className="bg-yellow-500 p-1 rounded ml-3">FROM $25</span>
+									<span className="bg-yellow-500 hidden md:block p-1 rounded ml-3">FROM $25</span>
 								</p>
 							</div>
 							<div className="overlay">
 								<img src={bestRoom4} alt="" />
 								<p className="overlay-text ">
 									<span>LIGHTING ROOM</span>
-									<span className="bg-yellow-500 p-1 rounded ml-3">FROM $25</span>
+									<span className="bg-yellow-500 hidden md:block p-1 rounded ml-3">FROM $25</span>
 								</p>
 							</div>
 						</div>

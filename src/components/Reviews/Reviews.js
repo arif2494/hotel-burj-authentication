@@ -23,7 +23,7 @@ const Reviews = () => {
 			<h2 className="text-5xl	text-white bottom-line mb-8">REVIEWS</h2>
 			<Carousel {...getConfigurableProps()}>
 				<div>
-					<h1 className="text-lg w-6/12 mx-auto text-white ">
+					<h1 className="text-2xl review-color w-6/12 mx-auto font-medium text-white">
 						Sed sollicitudin, sem id imperdiet semper, enim ante tempor sapien, a commodo nisl dolor at
 						elit. Aliquam suscipit egestas velit at elementum. Nulla sit amet ligula at dolor rhoncus
 						rhoncus. Aenean molestie est tortor. Mauris dictum magna sit amet velit ornare.
@@ -32,7 +32,7 @@ const Reviews = () => {
 					<p className="text-white mt-3 font-thin text-gray-200 text-lg">Jeffry Hen - Luxury Room</p>
 				</div>
 				<div>
-					<h1 className="text-lg w-6/12 mx-auto text-white">
+					<h1 className="text-2xl review-color w-6/12 mx-auto font-medium text-white">
 						Sed sollicitudin, sem id imperdiet semper, enim ante tempor sapien, a commodo nisl dolor at
 						elit. Aliquam suscipit egestas velit at elementum. Nulla sit amet ligula at dolor rhoncus
 						rhoncus.
@@ -41,7 +41,7 @@ const Reviews = () => {
 					<p className="text-white mt-3 font-thin text-gray-200 text-lg">David Paul - Standard Room</p>
 				</div>
 				<div>
-					<h1 className="text-lg w-6/12 mx-auto text-white">
+					<h1 className="text-2xl review-color w-6/12 mx-auto font-medium text-white">
 						sem id imperdiet semper, enim ante tempor sapien, a commodo nisl dolor at elit. Aliquam suscipit
 						egestas velit at elementum. Nulla sit amet ligula at dolor rhoncus rhoncus. Aenean molestie est
 						tortor. Mauris dictum magna sit amet velit ornare.

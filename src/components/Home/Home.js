@@ -11,8 +11,10 @@ const Home = () => {
 			{/* hero section */}
 			<div className="hero-section flex items-center justify-center">
 				{/* datepicker */}
-				<DatePicker />
-				<button className="px-6 py-3 text-white bg-black">Book Now</button>
+				<div className="flex items-center justify-center flex-col">
+					<DatePicker />
+					<button className="px-6 py-3 mt-3 text-white bg-black">Book Now</button>
+				</div>
 			</div>
 			{/* Home About */}
 			<HomeAbout />
