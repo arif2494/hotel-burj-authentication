@@ -12,7 +12,7 @@ const About = () => {
 			<div className="container mx-auto">
 				{/* about hotel */}
 				<div className="grid grid-cols-1 md:grid-cols-2 my-8 flex items-center justify-end">
-					<div className="p-16">
+					<div className="p-2 md:p-16">
 						<h2 className="text-4xl font-medium ">BURJ AL ARABIA SINCE 1992</h2>
 						<h6 className="text-lg my-4">High quality accommodation services.</h6>
 						<p className="text-justify font-thin">
@@ -31,7 +31,7 @@ const About = () => {
 					</div>
 				</div>
 				{/* our institute */}
-				<div className="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-4 px-16 my-4">
+				<div className="grid gap-2 md:gap-4 md:gap-8 grid-cols-2 md:grid-cols-4 p-2 md:px-16 my-4">
 					<div className="border-2 border-gray-400 p-4 flex  flex-col items-center">
 						<img src={bed} alt="!" className="w-20" />
 						<p className="text-2xl font-thin mt-2">50 Rooms</p>

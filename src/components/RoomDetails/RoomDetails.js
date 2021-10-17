@@ -36,14 +36,14 @@ const RoomDetails = () => {
 		<div>
 			<RoomHeading>Room Details</RoomHeading>
 
-			<div className="container mx-auto w-9/12">
+			<div className="container mx-auto p-2 md:w-9/12">
 				<div className="grid grid-cols-1 md:grid-cols-5 gap-4 my-8">
 					{/* First column */}
 					<div className="col-span-3">
 						{/* Name */}
-						<h2 className="text-4xl font-medium">{name}</h2>
+						<h2 className="text-2xl md:text-4xl text-center font-medium">{name}</h2>
 						{/* Rattings */}
-						<p className="font-thin text-lg mt-3">Rattings : </p>
+						<p className="font-thin md:text-lg mt-3">Rattings : </p>
 						<div className="flex items-center">
 							<ReactStars {...ratingDetails} />
 							<p className="text-2xl ml-3">{ratting}</p>

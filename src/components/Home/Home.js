@@ -21,7 +21,9 @@ const Home = () => {
 			{/* our best rooms */}
 			<BestRooms />
 			{/* Reviews */}
-			<Reviews />
+			<div className="hidden md:block">
+				<Reviews />
+			</div>
 			{/* fOOD & RECEPTION */}
 			<FoodReception />
 		</div>
