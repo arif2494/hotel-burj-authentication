@@ -20,29 +20,17 @@ const Header = () => {
 			return <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />;
 		}
 	};
-	// switch
+	// switch for dark mode 
 	const [ enabled, setEnabled ] = useState(false);
-	console.log(enabled);
+if(enabled){
+	document.getElementById('root').classList.add('dark')
+}else{
+		document.getElementById('root').classList.remove('dark')
+}
 	return (
 		<div>
 			<header className="text-white body-font bg-transparent header-position w-full ">
 				<div className="container mx-auto">
-					{/* switch */}
-				{/* 	<Switch
-						checked={enabled}
-						onChange={setEnabled}
-						className={`${enabled
-							? 'bg-blue-600'
-							: 'bg-gray-200'} relative inline-flex items-center h-6 rounded-full w-11`}
-					>
-						<span className="sr-only">Enable notifications</span>
-						<span
-							className={`${enabled
-								? 'translate-x-6'
-								: 'translate-x-1'} inline-block w-4 h-4 transform bg-white rounded-full`}
-						/>
-					</Switch> */}
-					{/* switch */}
 					<div className="grid  grid-cols-1 lg:grid-cols-2 h-20 items-center ">
 						{/* 1st column */}
 						<div className="hidden lg:block">
@@ -69,7 +57,7 @@ const Header = () => {
 							<div>
 								<NavLink to="/" className="flex">
 									<img className="w-10" src={hotelIcon} alt="!" />
-									<span className="ml-3 text-3xl text-white hover:text-gray-900 hidden lg:block">
+									<span className="mx-3 text-3xl text-white hover:text-gray-900 hidden lg:block">
 										BURJ AL ARABIA
 									</span>
 								</NavLink>
@@ -85,6 +73,22 @@ const Header = () => {
 											<img className="mr-3 rounded-full h-12 w-12" src={user.photoURL} alt="!" />
 										)}
 									</span>
+										{/* switch */}
+					<Switch
+						checked={enabled}
+						onChange={setEnabled}
+						className={`${enabled
+							? 'bg-blue-600'
+							: 'bg-gray-200'} relative inline-flex items-center h-6 rounded-full w-11`}
+					>
+						<span className="sr-only">Enable notifications</span>
+						<span
+							className={`${enabled
+								? 'translate-x-6'
+								: 'translate-x-1'} inline-block w-4 h-4 transform bg-white rounded-full`}
+						/>
+					</Switch>
+					{/* switch */}
 									{user?.email ? (
 										<button
 											onClick={logOut}
