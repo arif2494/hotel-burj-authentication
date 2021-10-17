@@ -12,7 +12,7 @@ const BestRooms = () => {
 			<div className="container mx-auto w-8/12">
 				<p className="font-thin  text-gray-500 text-center pt-8 bottom-line">LUXURY ROOMS</p>
 				<h2 className="text-5xl font-thin text-center py-5 mb-5">BEST ROOMS</h2>
-				<div className="grid grid-cols-2 gap-4 pt-6 pb-12">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-6 pb-12">
 					<div className="w-full h-full">
 						<img src={mainImg} alt="!" className="w-full " />
 						<div className="bg-white p-6 ">

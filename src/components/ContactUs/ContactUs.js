@@ -5,7 +5,7 @@ const ContactUs = () => {
 	return (
 		<div>
 			<RoomHeading>Contact Us</RoomHeading>
-			{/* Contact form */}
+			{/* Contact htmlForm */}
 			<section className="text-gray-600 body-font relative">
 				<div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
 					<div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
@@ -13,10 +13,10 @@ const ContactUs = () => {
 							width="100%"
 							height="100%"
 							className="absolute inset-0 bw-map"
-							frameborder="0"
+							frameBorder="0"
 							title="map"
-							marginheight="0"
-							marginwidth="0"
+							marginHeight="0"
+							marginWidth="0"
 							scrolling="no"
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.178510024373!2d55.27218771538084!3d25.19720183788287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1sen!2sbd!4v1634401942449!5m2!1sen!2sbd"
 						/>
@@ -47,7 +47,7 @@ const ContactUs = () => {
 							Post-ironic portland shabby chic echo park, banjo fashion axe
 						</p>
 						<div className="relative mb-4">
-							<label for="name" className="leading-7 text-sm text-gray-600">
+							<label htmlFor="name" className="leading-7 text-sm text-gray-600">
 								Name
 							</label>
 							<input
@@ -58,7 +58,7 @@ const ContactUs = () => {
 							/>
 						</div>
 						<div className="relative mb-4">
-							<label for="email" className="leading-7 text-sm text-gray-600">
+							<label htmlFor="email" className="leading-7 text-sm text-gray-600">
 								Email
 							</label>
 							<input
@@ -69,7 +69,7 @@ const ContactUs = () => {
 							/>
 						</div>
 						<div className="relative mb-4">
-							<label for="message" className="leading-7 text-sm text-gray-600">
+							<label htmlFor="message" className="leading-7 text-sm text-gray-600">
 								Message
 							</label>
 							<textarea
@@ -82,7 +82,7 @@ const ContactUs = () => {
 							Button
 						</button>
 						<p className="text-xs text-gray-500 mt-3">
-							Tell about your thoughts about us. It's very important for us.
+							Tell about your thoughts about us. It's very important htmlFor us.
 						</p>
 					</div>
 				</div>

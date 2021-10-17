@@ -37,7 +37,7 @@ const RoomDetails = () => {
 			<RoomHeading>Room Details</RoomHeading>
 
 			<div className="container mx-auto w-9/12">
-				<div className="grid grid-cols-5 gap-4 my-8">
+				<div className="grid grid-cols-1 md:grid-cols-5 gap-4 my-8">
 					{/* First column */}
 					<div className="col-span-3">
 						{/* Name */}
@@ -54,15 +54,15 @@ const RoomDetails = () => {
 						<div className="grid grid-cols-3 divide-x-2 divide-gray-500 border-b-2 border-gray-200 mb-4">
 							<div className=" my-6 flex items-center justify-center flex-col">
 								<People size={40} />
-								<p className="text-2xl">Capacity : {capacity}</p>
+								<p className="text-lg md:text-2xl">Capacity : {capacity}</p>
 							</div>
 							<div className=" my-6 flex items-center justify-center flex-col">
 								<BoundingBoxCircles size={40} />
-								<p className="text-2xl">Room Size : {size}</p>
+								<p className="text-lg md:text-2xl">Room Size : {size}</p>
 							</div>
 							<div className=" my-6 flex items-center justify-center flex-col">
 								<CurrencyDollar size={40} />
-								<p className="text-2xl">Price : {price}</p>
+								<p className="text-lg md:text-2xl">Price : {price}</p>
 							</div>
 						</div>
 
@@ -123,7 +123,7 @@ const RoomDetails = () => {
 							<DatePicker />
 							<button className="bg-black flex  text-white my-6 px-6 py-3 font-medium ">Book Now</button>
 						</div>
-						<img className="w-9/12" src={flyer} alt="!" />
+						<img className="w-full md:w-9/12" src={flyer} alt="!" />
 					</div>
 				</div>
 			</div>

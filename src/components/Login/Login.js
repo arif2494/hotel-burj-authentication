@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form';
 import { useHistory, useLocation } from 'react-router';
 
 import useAuth from '../../hooks/useAuth';
+import RoomHeading from '../RoomHeading/RoomHeading';
 
 const Login = () => {
 
@@ -74,6 +75,9 @@ setCheck(checked)
 
 	return (
 		<div>
+			<RoomHeading>
+				Login Page
+			</RoomHeading>
 			<h1 className="text-6xl text-center mt-6">Login Using Google</h1>
 			<button
 				className="flex mx-auto mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"

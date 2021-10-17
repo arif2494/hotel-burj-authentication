@@ -1,12 +1,13 @@
 import React from 'react';
 import { Facebook, Messenger, Instagram, Twitter, Youtube } from 'react-bootstrap-icons';
+import { Link } from 'react-router-dom';
 import hotelIcon from '../../img/hotelIcon.svg';
 
 const Footer = () => {
 	return (
 		<footer className="bg-black text-white">
 			<div className="container mx-auto">
-				<div className="grid grid-cols-3 pt-12">
+				<div className="grid grid-cols-1 md:grid-cols-3 pt-12">
 					<div>
 						<h4 className="font-thin text-2xl">Phone Support</h4>
 						<p className="tent-lg font-thin text-gray-400 pb-5">24 HOURS A DAY</p>
@@ -39,15 +40,9 @@ const Footer = () => {
 						<h4 className="font-thin text-2xl">Catagories</h4>
 						<p className="tent-lg font-thin text-gray-400 pb-5">IMPORTANT LINKS</p>
 						<div className="flex flex-col justify-between">
-							<a href="https" target="_blank">
-								GALLERY
-							</a>
-							<a href="https" target="_blank">
-								LOGIN
-							</a>
-							<a href="https" target="_blank">
-								ROOMS
-							</a>
+							<Link to="/gallery">GALLERY</Link>
+							<Link to="/login">LOGIN</Link>
+							<Link to="/ROOMS">ROOMS</Link>
 						</div>
 					</div>
 				</div>

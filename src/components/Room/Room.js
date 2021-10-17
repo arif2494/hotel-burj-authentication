@@ -7,7 +7,7 @@ const Room = (props) => {
 	const url = `/rooms/${id}`;
 	return (
 		<div className="border-2 border-gray-400 my-6  rounded-2xl p-4">
-			<div className="grid grid-cols-6 gap-4">
+			<div className="grid grid-cols-1 md:grid-cols-6 gap-4">
 				<div className=" col-span-2">
 					<img src={img} alt="" className="w-full rounded-2xl" />
 				</div>

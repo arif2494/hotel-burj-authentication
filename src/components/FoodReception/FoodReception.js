@@ -6,7 +6,7 @@ const FoodReception = () => {
 		<div className="bg-gray-100">
 			<div className="container mx-auto  py-12 w-8/12">
 				<h2 className="bottom-line mb-12 text-center text-4xl font-thin">FOOD & RECEPTION</h2>
-				<div className="grid grid-cols-2">
+				<div className="grid grid-cols-1 md:grid-cols-2">
 					{/* first row */}
 					<div className="text-center bg-white p-16">
 						<p className="bottom-line mb-3 text-gray-500  font-thin">FIND FOOD</p>
@@ -20,7 +20,7 @@ const FoodReception = () => {
 						</button>
 					</div>
 					<div>
-						<img src={food} alt="!" />
+						<img src={food} alt="!" className="mb-2 md:mb-0" />
 					</div>
 					{/* second row */}
 					<div>

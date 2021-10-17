@@ -75,3 +75,7 @@
 .bw-map {
 	filter: grayscale(1) contrast(1.2) opacity(0.4);
 }
+/* masonary img */
+.react-photo-gallery--gallery * img {
+	padding: 10px;
+}
