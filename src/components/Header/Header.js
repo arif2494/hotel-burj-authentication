@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import OffcanvasMenu from 'react-offcanvas-menu-component';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import hotelIcon from '../../img/hotelIcon.svg';
+import { Switch } from '@headlessui/react';
 // demo
 
 const Header = () => {
@@ -12,22 +13,39 @@ const Header = () => {
 	const location = useLocation();
 
 	// show photo in off canvas
-const photo=(photo) =>{
-if(photo){
-	return	<img className='mr-3 rounded-full h-12 w-12' src={user.photoURL} alt="!" />
-}else{
-	return	<img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />
-}
-
-}
-				
+	const photo = (photo) => {
+		if (photo) {
+			return <img className="mr-3 rounded-full h-12 w-12" src={user.photoURL} alt="!" />;
+		} else {
+			return <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />;
+		}
+	};
+	// switch
+	const [ enabled, setEnabled ] = useState(false);
+	console.log(enabled);
 	return (
 		<div>
 			<header className="text-white body-font bg-transparent header-position w-full ">
 				<div className="container mx-auto">
+					{/* switch */}
+				{/* 	<Switch
+						checked={enabled}
+						onChange={setEnabled}
+						className={`${enabled
+							? 'bg-blue-600'
+							: 'bg-gray-200'} relative inline-flex items-center h-6 rounded-full w-11`}
+					>
+						<span className="sr-only">Enable notifications</span>
+						<span
+							className={`${enabled
+								? 'translate-x-6'
+								: 'translate-x-1'} inline-block w-4 h-4 transform bg-white rounded-full`}
+						/>
+					</Switch> */}
+					{/* switch */}
 					<div className="grid  grid-cols-1 lg:grid-cols-2 h-20 items-center ">
 						{/* 1st column */}
-						<div className='hidden lg:block'>
+						<div className="hidden lg:block">
 							<nav>
 								<NavLink to="/" className="mr-5 hover:text-gray-900 text-3xl text-white">
 									Home
@@ -47,47 +65,51 @@ if(photo){
 							</nav>
 						</div>
 						{/* 2nd column */}
-						<div className='flex ml-auto'>
+						<div className="flex ml-auto">
 							<div>
 								<NavLink to="/" className="flex">
 									<img className="w-10" src={hotelIcon} alt="!" />
-									<span className="ml-3 text-3xl text-white hover:text-gray-900 hidden lg:block">BURJ AL ARABIA</span>
+									<span className="ml-3 text-3xl text-white hover:text-gray-900 hidden lg:block">
+										BURJ AL ARABIA
+									</span>
 								</NavLink>
 							</div>
 							<div>
 								{/* conditional login and image */}
-								<div className='flex items-center'>
-				<span>{user?.displayName &&
-			<span className='text-lg  mx-2'>{user.displayName}</span>
-				}</span>
-				<span className='hidden lg:block'>{user?.photoURL &&
-				<img className='mr-3 rounded-full h-12 w-12' src={user.photoURL} alt="!" />
-				}</span>
-				{user?.email ? (
-					<button
-						onClick={logOut}
-						className=" h-9 text-black  bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-900
+								<div className="flex items-center">
+									<span>
+										{user?.displayName && <span className="text-lg  mx-2">{user.displayName}</span>}
+									</span>
+									<span className="hidden lg:block">
+										{user?.photoURL && (
+											<img className="mr-3 rounded-full h-12 w-12" src={user.photoURL} alt="!" />
+										)}
+									</span>
+									{user?.email ? (
+										<button
+											onClick={logOut}
+											className=" h-9 text-black  bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-900
 	      hover:text-white rounded text-base mt-4 md:mt-0"
-					>
-						Sign Out
-					</button>
-				) : (
-					<NavLink
-						to="/login"
-						className=" bg-gray-100 text-black border-0 py-1 px-3 focus:outline-none hover:bg-gray-900
+										>
+											Sign Out
+										</button>
+									) : (
+										<NavLink
+											to="/login"
+											className=" bg-gray-100 text-black border-0 py-1 px-3 focus:outline-none hover:bg-gray-900
 	      hover:text-white rounded text-base mt-4 md:mt-0 ml-3"
-					>
-						Sign In
-					</NavLink>
-				)}
-			</div>
+										>
+											Sign In
+										</NavLink>
+									)}
+								</div>
 							</div>
 						</div>
 						{/* end */}
 					</div>
 				</div>
 			</header>
-	
+
 			{/* off canvas */}
 			<div className="lg:hidden block">
 				<OffcanvasMenu
@@ -106,11 +128,9 @@ if(photo){
 						{ text: '	Contact', link: '/contact' },
 						{ text: 'Gallery', link: '/gallery' }
 					]}
-					header={
-						// you can add logo to the header for example
-						// <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />
-						photo(user?.photoURL)
-					}
+					header={// you can add logo to the header for example
+					// <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />
+					photo(user?.photoURL)}
 				/>
 			</div>
 		</div>

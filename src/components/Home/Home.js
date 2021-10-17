@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BestRooms from '../BestRooms/BestRooms';
 import DatePicker from '../DatePicker/DatePicker';
 import FoodReception from '../FoodReception/FoodReception';
@@ -13,7 +14,9 @@ const Home = () => {
 				{/* datepicker */}
 				<div className="flex items-center justify-center flex-col">
 					<DatePicker />
-					<button className="px-6 py-3 mt-3 text-white bg-black">Book Now</button>
+					<Link to="/rooms">
+						<button className="px-6 py-3 mt-3 text-white bg-black">Book Now</button>
+					</Link>
 				</div>
 			</div>
 			{/* Home About */}

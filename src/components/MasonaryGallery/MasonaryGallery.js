@@ -6,9 +6,11 @@ const MasonaryGallery = () => {
 	return (
 		<div>
 			<RoomHeading>Gallery</RoomHeading>
-			<div className="container mx-auto w-9/12">
-				<h2 className="text-4xl text-center my-6">Gallery</h2>
-				<Gallery photos={photos} direction={'column'} />
+			<div className="dark:bg-gray-800">
+				<div className="container mx-auto w-9/12">
+					<h2 className="text-4xl text-center dark:text-gray-100 py-6">Gallery</h2>
+					<Gallery photos={photos} direction={'column'} />
+				</div>
 			</div>
 		</div>
 	);

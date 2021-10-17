@@ -19,19 +19,19 @@ const Footer = () => {
 						<h4 className="font-thin text-2xl">Connect With Us</h4>
 						<p className="tent-lg font-thin text-gray-400 pb-5">SOCIAL MEDIA CHANNELS</p>
 						<div className="flex  justify-between w-36">
-							<a href="https" target="_blank">
+							<a href="www.facebook.com" target="_blank">
 								<Facebook />
 							</a>
-							<a href="https" target="_blank">
+							<a href="www.messenger.com" target="_blank">
 								<Messenger />
 							</a>
-							<a href="https" target="_blank">
+							<a href="www.instagram.com" target="_blank">
 								<Instagram />
 							</a>
-							<a href="https" target="_blank">
+							<a href="www.twitter.com" target="_blank">
 								<Twitter />
 							</a>
-							<a href="https" target="_blank">
+							<a href="www.youtube.com/" target="_blank">
 								<Youtube />
 							</a>
 						</div>

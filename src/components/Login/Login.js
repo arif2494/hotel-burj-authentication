@@ -78,19 +78,20 @@ setCheck(checked)
 			<RoomHeading>
 				Login Page
 			</RoomHeading>
-			<h1 className="text-6xl text-center mt-6">Login Using Google</h1>
+		<div className='dark:bg-gray-800'>
+				<h1 className="text-6xl text-center pt-6 dark:text-gray-100">Login Using Google</h1>
 			<button
-				className="flex mx-auto mt-5 text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded"
+				className="flex mx-auto mt-5 text-white bg-black border-0 py-2 px-6 focus:outline-none hover:bg-gray-600 rounded"
 				onClick={handleGoogleSignIn}
 			>
 				Sign In with Google
 			</button>
 
 			<div className="mt-12">
-				<h1 className="text-3xl font-medium mb-4 text-center">Sign Up</h1>
-				<form onSubmit={check ? handleSubmit(handleLogin) :handleSubmit(handleSignUp)} className='flex flex-col items-center'>
+				<h1 className="text-3xl font-medium mb-4 text-center dark:text-gray-200">Sign Up</h1>
+				<form onSubmit={check ? handleSubmit(handleLogin) :handleSubmit(handleSignUp)} className='flex flex-col items-center pb-6'>
 					{check || <input
-						className="p-3 bg-gray-200 w-80 mb-6 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
+						className="p-3 bg-gray-600 w-80 mb-6 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
 						placeholder='Type Your Name'
 						{...register('name',{ required: true })}
 						type='text'
@@ -98,7 +99,7 @@ setCheck(checked)
 					
 					}
 					<input
-						className="p-3 bg-gray-200 w-80 mb-6 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
+						className="p-3 bg-gray-600 w-80 mb-6 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
 						placeholder='Type Email'
 						{...register('email',{ required: true })}
 						type='email'
@@ -106,7 +107,7 @@ setCheck(checked)
 				{errors.email && <span className='text-red-600'>Please Enter Email Address</span>}   
 
 					<input
-						className="p-3 bg-gray-200 w-80 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
+						className="p-3 bg-gray-600 w-80 border border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent rounded-md"
 						placeholder='Type Password' 
 						type='password'
 						{...register('password', 
@@ -114,16 +115,17 @@ setCheck(checked)
 					/>
 
 					{errors.password && <span className='text-red-600'>Please Enter Password</span>}
-					<label  htmlFor="check"><input onClick={handleToggle} type="checkbox" id='check' className=" checked:bg-blue-600 checked:border-transparent" /> Already Have a account?</label>
+					<label  htmlFor="check"><input onClick={handleToggle} type="checkbox" id='check' className="checked:bg-blue-600 checked:border-transparent " /> <span className='dark:text-gray-300'>Already Have a account?</span></label>
 			
 					<input
-						className="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 rounded-full py-3 px-6 mt-3 text-white font-medium text-1xl"
+						className="bg-black hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50 rounded-full py-3 px-6 mt-3 text-white font-medium text-1xl"
 						type="submit"
 					/>
 
 					
 				</form>
 			</div>
+		</div>
 		</div>
 	);
 };

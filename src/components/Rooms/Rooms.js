@@ -9,7 +9,9 @@ const Rooms = () => {
 	return (
 		<div>
 			<RoomHeading> All The Rooms</RoomHeading>
-			<div className="container mx-auto">{rooms.map((room) => <Room key={room.id} room={room} />)}</div>
+			<div className="dark:bg-gray-800 py-6">
+				<div className="container mx-auto">{rooms.map((room) => <Room key={room.id} room={room} />)}</div>
+			</div>
 		</div>
 	);
 };
