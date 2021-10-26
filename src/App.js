@@ -5,7 +5,7 @@ import Rooms from './components/Rooms/Rooms';
 import Login from './components/Login/Login';
 import Header from './components/Header/Header';
 import AuthProvider from './context/AuthProvider';
-import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Footer from './components/Footer/Footer';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import About from './components/About/About';
