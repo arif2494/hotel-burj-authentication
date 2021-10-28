@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router';
-import { Link } from 'react-router-dom';
 import OffcanvasMenu from 'react-offcanvas-menu-component';
-import { NavLink } from 'react-router-dom';
+import { NavLink,Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import hotelIcon from '../../img/hotelIcon.svg';
 import { Switch } from '@headlessui/react';
@@ -33,17 +32,17 @@ if(enabled){
 				<ul className='list-none flex justify-between'>
 				<div  className='inline-block flex items-center'>
 						
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'>Home</li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'>Rooms</li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'>About</li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'>Contact</li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 '>Gallery</li>
+					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/'>Home</NavLink> </li>
+					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/rooms'>Rooms</NavLink> </li>
+					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/about'>About</NavLink> </li>
+					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/contact'>Contact</NavLink> </li>
+					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 '> <NavLink to='/gallery'>Gallery</NavLink> </li>
 					
 				</div>
 					<div  className='inline-block'>
 							<img className='inline-block w-12 mr-3' src={hotelIcon} alt="!" />
-							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'>BURJ AL ARABIA</li>
-							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'>LOG IN</li>
+							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'><NavLink to='/'>BURJ AL ARABIA</NavLink></li>
+							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'><NavLink to='/login'>LOG IN</NavLink></li>
 					<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'>SIGN OUT</li>
 					<img className='inline-block w-14 rounded-full h-14' src={user?.photoURL} alt="!" />
 					</div>

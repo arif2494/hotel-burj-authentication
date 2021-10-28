@@ -84,3 +84,15 @@
 .react-photo-gallery--gallery * img {
 	padding: 10px;
 }
+
+/* pagination */
+.pagination {
+	margin: 30px;
+}
+.pagination button {
+	padding: 0 10px;
+	margin-right: 10px;
+}
+.pagination .selected {
+	background-color: aqua;
+}
