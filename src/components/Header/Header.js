@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router';
 import OffcanvasMenu from 'react-offcanvas-menu-component';
-import { NavLink,Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import hotelIcon from '../../img/hotelIcon.svg';
 import { Switch } from '@headlessui/react';
+import { TextCenter } from 'react-bootstrap-icons';
 // demo
 
 const Header = () => {
@@ -19,61 +20,88 @@ const Header = () => {
 			return <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />;
 		}
 	};
-	// switch for dark mode 
+	// switch for dark mode
 	const [ enabled, setEnabled ] = useState(false);
-if(enabled){
-	document.getElementById('root').classList.add('dark')
-}else{
-		document.getElementById('root').classList.remove('dark')
-}
+	if (enabled) {
+		document.getElementById('root').classList.add('dark');
+	} else {
+		document.getElementById('root').classList.remove('dark');
+	}
 	return (
-		<div className='bg-black text-white'>
-			<nav className='navbar container mx-auto py-3'>
-				<ul className='list-none flex justify-between'>
-				<div  className='inline-block flex items-center'>
-						
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/'>Home</NavLink> </li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/rooms'>Rooms</NavLink> </li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/about'>About</NavLink> </li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 mr-3'> <NavLink to='/contact'>Contact</NavLink> </li>
-					<li className='inline-block cursor-pointer	px-6 hover:bg-gray-300 py-3 '> <NavLink to='/gallery'>Gallery</NavLink> </li>
-					
-				</div>
-					<div  className='inline-block'>
-							<img className='inline-block w-12 mr-3' src={hotelIcon} alt="!" />
-							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'><NavLink to='/'>BURJ AL ARABIA</NavLink></li>
-							<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'><NavLink to='/login'>LOG IN</NavLink></li>
-					<li className='inline-block mr-3 cursor-pointer hover:bg-gray-300 py-3 px-4 mr-3'>SIGN OUT</li>
-					<img className='inline-block w-14 rounded-full h-14' src={user?.photoURL} alt="!" />
-					</div>
-					
-				
+		<div className="bg-black text-white">
+			<nav>
+				<div class="logo">Burj Al Arabia</div>
+				<label for="btn" class="icon" id="bar-icon">
+					<span id="bar">
+						<TextCenter size={36} className="fa-plus" />
+					</span>
+				</label>
+				<input className="input-field" type="checkbox" id="btn" />
+				<ul>
+					<li>
+						<a href="/">Home</a>
+					</li>
+					<li>
+						<label for="btn-1" class="show">
+							Features +
+						</label>
+						<a href="/">Features</a>
+						<input className="input-field" type="checkbox" id="btn-1" />
+						<ul>
+							<li>
+								<a href="/">Pages</a>
+							</li>
+							<li>
+								<a href="/">Elements</a>
+							</li>
+							<li>
+								<a href="/">Icons</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<label for="btn-2" class="show">
+							Services +
+						</label>
+						<a href="/">Services</a>
+						<input className="input-field" type="checkbox" id="btn-2" />
+						<ul>
+							<li>
+								<a href="/">Web Design</a>
+							</li>
+							<li>
+								<a href="/">App Design</a>
+							</li>
+							<li>
+								<label for="btn-3" class="show">
+									More +
+								</label>
+								<a href="/">
+									More <span class="fa fa-plus" />
+								</a>
+								<input className="input-field" type="checkbox" id="btn-3" />
+								<ul>
+									<li>
+										<a href="/">Submenu-1</a>
+									</li>
+									<li>
+										<a href="/">Submenu-2</a>
+									</li>
+									<li>
+										<a href="/">Submenu-3</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="/">Portfolio</a>
+					</li>
+					<li>
+						<a href="/">Contact</a>
+					</li>
 				</ul>
 			</nav>
-
-			{/* off canvas */}
-			<div className="lg:hidden block">
-				<OffcanvasMenu
-					Link={Link} // react-router-dom Link
-					location={location} // location parameter passed from Router
-					config={{
-						width: 300, // you can modify default width
-						push: true // if you want to enable push feature
-					}}
-					// this is where you create your menu items
-					menu={[
-						// basic menu item
-						{ text: 'Home', link: '/' },
-						{ text: '	Rooms', link: '/rooms' },
-						{ text: 'About', link: '/about' },
-						{ text: '	Contact', link: '/contact' },
-						{ text: 'Gallery', link: '/gallery' }
-					]}
-					header={// you can add logo to the header for example
-					// <img src={hotelIcon} className="menu-logo" alt="logo" width="100" height="100" />
-					photo(user?.photoURL)}
-				/>
-			</div>
 		</div>
 	);
 };
